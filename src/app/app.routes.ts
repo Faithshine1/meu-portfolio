@@ -22,4 +22,9 @@ export const routes: Routes = [
     path: 'projetos',
     loadComponent: () => import('./features/projetos/projetos').then(m => m.Projetos)
   },
+  {
+    path: '',
+    redirectTo: 'sobre',
+    pathMatch: 'full'
+  },
 ];
